@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main"></div>
+  <div class="secondary top-left">
+    <div class="circle"></div>
+    <div class="rectangle"></div>
+  </div>
+  <div class="secondary top-right">
+    <div class="circle"></div>
+    <div class="rectangle"></div>
+  </div>
+  <div class="secondary bottom-left">
+    <div class="circle"></div>
+    <div class="rectangle"></div>
+  </div>
+  <div class="secondary bottom-right">
+    <div class="circle"></div>
+    <div class="rectangle"></div>
+  </div>
+  <style>
+    body {
+      background: #414B81;
+    }
+
+    .main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80px;
+      height: 50px;
+      background: #FADE8B;
+    }
+
+    .secondary {
+      position: absolute;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #FADE8B;
+    }
+
+    .rectangle {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #FADE8B;
+      top: 50PX;
+      left: 50PX
+    }
+
+    .top-left {
+      top: 25px;
+      left: 60px;
+    }
+
+    .top-right {
+      top: 25px;
+      left: auto;
+      right: 60px;
+      transform: rotateY(180deg);
+    }
+
+    .bottom-left {
+      top: auto;
+      left: 60px;
+      bottom: 25px;
+      transform: rotateX(180deg);
+    }
+
+    .bottom-right {
+      top: auto;
+      bottom: 25px;
+      right: 60px;
+      transform: rotateX(180deg) rotateY(180deg);
+
+    }
+  </style>
+</body>
+
+</html>
